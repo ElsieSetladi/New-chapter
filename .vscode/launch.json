@@ -1,0 +1,66 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
+            "type": "chrome",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open Untitled-2.html",
+            "file": "c:\\Users\\sekwa\\Desktop\\New chapter\\Untitled-2.html"
+        }
+    ]
+}
+
+//<h1>This is my first javascript application!
+
+//array
+    
+const person=["Cate","White",50];
+
+//function
+    function add(x,y){
+        let z= x+y;
+
+        return z;
+    }
+    let results= add(5,10);
+    console.log(results);
+
+//object
+const newPerson={
+    name:"Kate",
+    surname:"Meyers",
+    age:49,
+    
+};
+
+console.log(newPerson.name);
+console.log(newperson.surname);
+console.log(newPerson.age);
+
+//Arrow function
+
+const sayHello=(name, surname)=>{
+    console.log(`hello my name is ${name}`)
+    console.log(`my surname is${surname} , its nice to meet you!`)
+};
+sayHello("Sally","Mc Donalds");
+
+

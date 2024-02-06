@@ -1,0 +1,143 @@
+
+<!DOCTYPE HTML>
+<HTML lang ="eng">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-Ua-Compatable" content="=IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <head>
+            <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+                
+    </head>
+    <title>Home</title>
+    <style>
+        .carousel{
+            height: 600px !important;
+        }
+        
+    </style>
+    <body>
+       
+
+   <nav class="nav-wraper orange">
+    <div class="container">
+        <a href="#" class="brand-logo">Logo brand</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-links">
+        <i class="material-icons">menu</i>
+    </a>
+
+    <ul class="right hide-on-med-and-down">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contacts</a></li>
+        <li><a href="#">Login</a></li>
+        
+    </ul>
+
+</div>
+</nav>
+ <ul class="sidenav" id="mobile-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contacts</a></li> 
+ </ul>
+
+ <div class="carousel carousel-slider" data-indicators="true">
+    <a href="#" class="carousel-item"><img src="anotherSchoolkid.jpg" alt="schooKid1"></a>
+    <a href="#" class="carousel-item"><img src="Masterfile.jpg" alt="schooKids"></a>
+    <a href="#" class="carousel-item"><img src="african-children-at-school.jpg" alt="schooKid3"></a>
+    <a href="#" class="carousel-item"><img src="schoolChildren.jpg" alt="schooKid4"></a>
+    <a href="#" class="carousel-item"><img src="slide3.jpg" alt="schooKid5"></a>
+ </div>
+
+ <section class="container section" id="About">
+    <div class="row">
+      <div class="col s12 l4">
+        <h2 class="black-text text-darken">About us...</h2>
+        <p>dfuldhbadvlajkbcv</p>
+      </div>
+    
+   <div class="col s12 l6 offset-l2">
+    <ul class="tabs">
+        <li class="tab col s4">
+            <a href="#goal" class="black-text text-darken-4">Goal</a>
+        </li>
+        <li class="tab col s4">
+            <a href="#vision" class="black-text text-darken-4">Vision</a>
+        </li>
+        <li class="tab col s4">
+            <a href="#mision" class="black-text text-darken-4">Mision</a>
+        </li>
+    </ul>
+    <div cass="col s12" id="goal">
+      <p class="flow-text black-text text-darken-4">GOAL</p> 
+      <p>Our focus is to provide a stimulating early learning and child care experience which promotes each child’s social/emotional, physical and cognitive development</p> 
+    </div>
+    <div cass="col s12" id="vision">
+        <p class="flow-text black-text text-darken-4">VISION</p> 
+        <p>Our Vision is a community where all children feel loved, respected and encouraged to develop to their fullest potential.</p> 
+      </div>
+      <div cass="col s12" id="mision">
+        <p class="flow-text black-text text-darken-4">MISION</p> 
+        <p>Our Mission is to provide high quality education and childcare in a safe, respectful and inclusive environment that builds a foundation for life-long learning.
+            We aim to provide a safe learning environment with a welcoming atmosphere which creates a sense of belonging amongst the families. We maintain an inclusive environment which acknowledges and respects children from diverse family and cultural backgrounds.</p> 
+      </div>
+</div>
+</div>
+ </section>
+ <footer class="page-footer grey darken-3">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 l6">
+                <h5>Connect with  Us...</h5>
+                <ul>
+                    <li><a href="#" class="grey-text text-lighten-4">Facebook</a></li>
+                    <li><a href="#" class="grey-text text-lighten-4">Instagram</a></li>
+                    <li><a href="#" class="grey-text text-lighten-4">X</a></li>
+                </ul>
+                
+            </div>
+            <div class="col s12 l4 offset-l2">
+                <h5>Contact us...</h5>
+
+                <i class="material-icons blue-text">call</i><br>
+                <i class="material-icons blue-text">email</i><br>
+                <i class="material-icons blue-text">location_on</i>
+                
+            </div>
+        </div>
+       
+    </div>
+
+    <div class="footer-copyright grey darken-4">
+        <div class="container center-align">&copy; 2023 Copyright</div>
+    </div>
+ </footer>
+
+
+
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+      <script>
+
+         $(document).ready(function()
+      {
+          $('.sidenav').sidenav();
+          $('.carousel').carousel();
+     
+
+    setInterval(function(){
+        $('.carousel').carousel('next');
+    },2000);
+    $('.tabs').tabs();
+});
+      </script>
+     
+</body>
+</HTML>
+

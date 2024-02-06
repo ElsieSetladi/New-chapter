@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+const person=["Cate","White",50];
+
+//adding an element to the enf of an array
+person.push("Montana");
+
+//removing the last element of the array
+person.pop();
+
+//adding an element at the beggining of an array
+person.unshift("980723");
+
+//Searching for an index of an item
+console.log(person.indexOf("White"));
+
+console.log(person[1],"is my name");
+console.log(person[2],"is my surname");
+console.log("i am " , person[3],"years old");
+console.log("and i live in " , person[3]);
+
+console.log(person.length);
+
+//function
+    function add(x,y){
+        let z= x+y;
+
+        return z;
+    }
+    let results= add(5,10);
+    console.log(results);
+
+//object
+const newPerson={
+    name:"Kate",
+    surname:"Meyers",
+    age:49,
+    
+};
+
+console.log(newPerson.name);
+console.log(newPerson.surname);
+console.log(newPerson.age);
+
+//array of objects
+const anotherPerson=[
+    {names:"Shelly",Surname:"Pane",age:25,place:"Pretoria"},
+    {names:"Kelly",Surname:"Phobes",age:18,place:"Randburg"},
+    {names:"Shane",Surname:"Ruben",age:20,place:"Centurion"},
+    {names:"Patrick",Surname:"Collin",age:38,place:"Rosebank"}
+]
+console.log(anotherPerson[0].names);
+console.log(anotherPerson[0].Surname);
+console.log(anotherPerson[0].age);
+console.log(anotherPerson[0].place);
+
+//splice will remove elements at certain indexes
+//anotherPerson.splice(1,2);
+//forEach will loop through the array
+
+anotherPerson.forEach(thisPerson =>console.log(thisPerson.age));
+//map function
+let getPlaces=anotherPerson.map(thisPerson=>console.log(thisPerson.place));
+
+
+//Arrow function
+
+const sayHello=(name, surname)=>{
+    console.log(`hello my name is ${name}`)
+    console.log(`my surname is ${surname} , its nice to meet you!`)
+};
+sayHello("Sally","Mc Donalds");
+
+//Promise
+
+function passed()
+{ 
+    return new Promise((resolve,reject)=>
+    {
+        const pass= false;
+
+        if(pass)
+        {
+            resolve("you have passed");
+        }
+        else{
+            reject("you have failed");
+        }
+       
+
+    });
+}
+function qualified()
+{
+    return new Promise((resolve,reject)=>
+    {
+        let qualify=60;
+
+        if(qualify>=50)
+        {
+            resolve("You have qualified for your exams,yay!")
+        }
+        else
+        {
+            reject("You have not qualified for your exams, try again next semester!!")
+        }
+
+    });
+}
+qualified().then(value=>{console.log(value);return passed()})
+           .catch(error=> console.error(error));
+
+fetch("https://pokeapi.co/api/v2/pokemon/pikachu")
+.then((response)=>
+{
+    console.log(response);
+    if(!response.ok)
+    {
+        throw new Error("could not fetch response");
+    }
+
+})
+.then(response=>console.log(response.name))
+.catch((error=>
+{
+    console.error(error);
+    
+}))
+
+//ternary operator
+
+let x= 49;
+let y= x >=50 ? "You have qualified":"you have not qualified";
+//console.log(y);
+
+</script>
+</body>
+</html>
